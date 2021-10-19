@@ -1,14 +1,14 @@
 import { Container,Box,Heading } from "@chakra-ui/react"
 
-const Page = () => {
+const Home = () => {
     return(
         <Container>
-            <Box borderRadius="lg" bg="red" p={3}  mb={6} align="center">
+            <Box borderRadius="lg" bg="red" p={3}  mb={6} textAlign="center">
                 Hello, I&apos;m a full-stack developer based in India!
             </Box>
             <Box display={{md: 'flex'}}>
                 <Box flexGrow={1}>
-                    <Heading as="h1" variant="page-title">
+                    <Heading as="h2" variant="page-title">
                         Pritam Debnath
                     </Heading>
                     <p>Digital Craftsman(Developer / Artist / Desginer)</p>
@@ -19,4 +19,4 @@ const Page = () => {
     )
 }
 
-export default Page
+export default Home
