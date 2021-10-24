@@ -71,7 +71,7 @@ const Home = () => {
             </NextLink>
         </Box>
       </Section>
-      <Section delay={0.2}>
+      <Section delay={0.5}>
           <Heading as="h3" variant="section-title">
               Bio
           </Heading>
@@ -88,10 +88,15 @@ const Home = () => {
               Completed Bachelor&apos;s in Computer Applications at Acharya Institute of Graduate Studies
           </BioSection>
       </Section>
-      <Section delay={0.3}>
+      <Section delay={1}>
           <Heading as="h3" variant="section-title">
-              What I like?
+              I ♥
           </Heading>
+          <Paragraph>
+            MMA, Boxing, {''}
+            <Link href="https://www.goodreads.com/review/list/90017901-pritam-debnath?ref=nav_mybooks&shelf=read">Books</Link>
+            , Drawing, Animation
+          </Paragraph>
       </Section>
     </Container>
   )
