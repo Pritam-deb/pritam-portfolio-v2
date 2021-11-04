@@ -5,14 +5,26 @@ import {
   Image,
   useColorModeValue,
   Link,
-  Button
+  Button,
+  SimpleGrid,
+  List,
+  ListItem,
+  Icon
 } from '@chakra-ui/react'
+
 import NextLink from 'next/link'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import Layout from '../components/layouts/article'
 import { BioSection, BioYear } from '../components/bio'
 import { ChevronRightIcon } from '@chakra-ui/icons'
+import { GridItem } from '../components/grid-item'
+import {
+  IoLogoTwitter,
+  IoLogoInstagram,
+  IoLogoGithub,
+  IoLogoDiscord
+} from 'react-icons/io5'
 const Home = () => {
   return (
     <Layout>
@@ -61,11 +73,7 @@ const Home = () => {
             a knack for all things launching products, from planning and
             designing all the way to solving real-life problems with code. When
             not online, he loves hanging out with his friends or reading books.
-            Currently, he is working in {''}
-            <NextLink href="https://www.geekyants.com/">
-              <Link>GeekyAnts</Link>
-            </NextLink>
-            .
+            
           </Paragraph>
           <Box align="center" my={4}>
             <NextLink href="/works">
@@ -105,6 +113,32 @@ const Home = () => {
             </Link>
             , Drawing, Animation
           </Paragraph>
+        </Section>
+        <Section delay={0.3}>
+          <Heading as="h3" variant="section-title">Find me on</Heading>
+          <List>
+            <ListItem>
+              <Link href="https://github.com/Pritam-deb" target="_blank">
+                <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoGithub}/>} top="5px" left="10px">Pritam</Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://www.instagram.com/pritamdeb_/" target="_blank">
+                <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoInstagram}/>} top="5px" left="10px">@pritamdeb_</Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://twitter.com/PritamDebnath_" target="_blank">
+                <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoTwitter}/>} top="5px" left="10px">@PritamDebnath_</Button>
+              </Link>
+            </ListItem>
+           
+            <ListItem>
+              <Link href="https://discord.gg/NJwCJckkf9" target="_blank">
+                <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoDiscord}/>} top="5px" left="10px">AmongUs</Button>
+              </Link>
+            </ListItem>
+          </List>
         </Section>
       </Container>
     </Layout>
