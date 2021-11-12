@@ -11,6 +11,7 @@ const Main = ({children, router}) => {
             <Head>
                 <meta name= "viewport" content="width=device-width, initial-scale=1"/>
                 <title>Pritam - Homepage</title>
+                <link rel="icon" type="image/p" href="/images/p.png"></link>
             </Head>
             <Navbar path={router.asPath}/>
             <Container maxW="container.md" pt={14}>
