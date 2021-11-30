@@ -6,7 +6,6 @@ import {
   useColorModeValue,
   Link,
   Button,
-  SimpleGrid,
   List,
   ListItem,
   Icon
@@ -18,7 +17,6 @@ import Paragraph from '../components/paragraph'
 import Layout from '../components/layouts/article'
 import { BioSection, BioYear } from '../components/bio'
 import { ChevronRightIcon } from '@chakra-ui/icons'
-import { GridItem } from '../components/grid-item'
 import {
   IoLogoTwitter,
   IoLogoInstagram,
@@ -73,7 +71,6 @@ const Home = () => {
             a knack for all things launching products, from planning and
             designing all the way to solving real-life problems with code. When
             not online, he loves hanging out with his friends or reading books.
-            
           </Paragraph>
           <Box align="center" my={4}>
             <NextLink href="/works">
@@ -115,27 +112,64 @@ const Home = () => {
           </Paragraph>
         </Section>
         <Section delay={0.3}>
-          <Heading as="h3" variant="section-title">Find me on</Heading>
+          <Heading as="h3" variant="section-title">
+            Find me on
+          </Heading>
           <List>
             <ListItem>
               <Link href="https://github.com/Pritam-deb" target="_blank">
-                <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoGithub}/>} top="5px" left="10px">Pritam</Button>
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoGithub} />}
+                  top="5px"
+                  left="10px"
+                >
+                  Pritam
+                </Button>
               </Link>
             </ListItem>
             <ListItem>
-              <Link href="https://www.instagram.com/pritamdeb_/" target="_blank">
-                <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoInstagram}/>} top="5px" left="10px">@pritamdeb_</Button>
+              <Link
+                href="https://www.instagram.com/pritamdeb_/"
+                target="_blank"
+              >
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoInstagram} />}
+                  top="5px"
+                  left="10px"
+                >
+                  @pritamdeb_
+                </Button>
               </Link>
             </ListItem>
             <ListItem>
               <Link href="https://twitter.com/PritamDebnath_" target="_blank">
-                <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoTwitter}/>} top="5px" left="10px">@PritamDebnath_</Button>
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoTwitter} />}
+                  top="5px"
+                  left="10px"
+                >
+                  @PritamDebnath_
+                </Button>
               </Link>
             </ListItem>
-           
+
             <ListItem>
               <Link href="https://discord.gg/NJwCJckkf9" target="_blank">
-                <Button variant="ghost" colorScheme="teal" leftIcon={<Icon as={IoLogoDiscord}/>} top="5px" left="10px">AmongUs</Button>
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoDiscord} />}
+                  top="5px"
+                  left="10px"
+                >
+                  AmongUs
+                </Button>
               </Link>
             </ListItem>
           </List>

@@ -20,33 +20,33 @@ const Posts = () => {
           <Section delay={0.1}>
             <GridItem
               href="https://p2builds.hashnode.dev/keeping-up-with-your-promise"
-              title="Keeping up with you Promise()"
+              title="Keeping up with your Promise()"
               thumbnail={thumbPromise}
             />
           </Section>
         </SimpleGrid>
-        <Divider/>
+        <Divider />
         <Heading as="h3" fontSize={20} mb={4} padding="1rem">
           Older Posts
         </Heading>
         <Section delay={0.2}>
-            <SimpleGrid columns={[1,1,2]} gap={6}>
-                <GridItem
-                    href="https://p2builds.hashnode.dev/a-month-in-reactjs"
-                    title="A month in ReactJS"
-                    thumbnail={thumbFirstBlog}
-                />
-                <GridItem
-                    href="https://p2builds.hashnode.dev/hooking-up-with-usestate-and-useeffect"
-                    title="Hooking up with useState and useEffect"
-                    thumbnail={thumbReactHooks}
-                />
-                <GridItem
-                    href="https://p2builds.hashnode.dev/components-in-reactjs"
-                    title="Components in ReactJS"
-                    thumbnail={thumbComponents}
-                />
-            </SimpleGrid>
+          <SimpleGrid columns={[1, 1, 2]} gap={6}>
+            <GridItem
+              href="https://p2builds.hashnode.dev/a-month-in-reactjs"
+              title="A month in ReactJS"
+              thumbnail={thumbFirstBlog}
+            />
+            <GridItem
+              href="https://p2builds.hashnode.dev/hooking-up-with-usestate-and-useeffect"
+              title="Hooking up with useState and useEffect"
+              thumbnail={thumbReactHooks}
+            />
+            <GridItem
+              href="https://p2builds.hashnode.dev/components-in-reactjs"
+              title="Components in ReactJS"
+              thumbnail={thumbComponents}
+            />
+          </SimpleGrid>
         </Section>
       </Container>
     </Layout>
