@@ -7,6 +7,7 @@ import thumbEvernote from '../public/images/evernote-clone.png'
 import thumbTodoist from '../public/images/todoist-clone.png'
 import thumbUniChat from '../public/images/unichat.png'
 import thumbDisneyPlus from '../public/images/disney+-clone.png'
+import thumbPinterest from '../public/images/pinterest.png'
 import Layout from '../components/layouts/article'
 
 const Works = () => {
@@ -28,7 +29,16 @@ const Works = () => {
             </WorkGridItem>
           </Section> */}
           <Section>
-          <WorkGridItem
+            <WorkGridItem
+              id="pinterest"
+              title="Pinterest-clone"
+              thumbnail={thumbPinterest}
+            >
+              This app allows you to upload, delete and even comment on photos.
+            </WorkGridItem>
+          </Section>
+          <Section>
+            <WorkGridItem
               id="sticky-notes"
               title="Sticky Notes"
               thumbnail={thumbSticyNotes}
@@ -36,15 +46,14 @@ const Works = () => {
               A webapp that can be a handy note-taking app.
             </WorkGridItem>
           </Section>
-          
         </SimpleGrid>
-        <Divider/>
+        <Divider />
         <Heading as="h3" fontSize={20} mb={4} padding="1.5rem">
           Past Projects
         </Heading>
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
-        <Section>
-          <WorkGridItem
+          <Section>
+            <WorkGridItem
               id="evernote-clone"
               title="Evernote Clone"
               thumbnail={thumbEvernote}
@@ -53,7 +62,7 @@ const Works = () => {
             </WorkGridItem>
           </Section>
           <Section>
-          <WorkGridItem
+            <WorkGridItem
               id="todoist-app"
               title="Todoist Clone"
               thumbnail={thumbTodoist}
@@ -62,22 +71,19 @@ const Works = () => {
             </WorkGridItem>
           </Section>
           <Section>
-          <WorkGridItem
-              id="VeChat"
-              title="UniChat"
-              thumbnail={thumbUniChat}
-            >
-              Chatroom where you can create groups, add people, share thoughts, files, photos etc.
-              
+            <WorkGridItem id="VeChat" title="UniChat" thumbnail={thumbUniChat}>
+              Chatroom where you can create groups, add people, share thoughts,
+              files, photos etc.
             </WorkGridItem>
           </Section>
           <Section>
-          <WorkGridItem
+            <WorkGridItem
               id="disney-plus-clone"
               title="Disney+ Clone"
               thumbnail={thumbDisneyPlus}
             >
-              Here style compoenents are used heavily along with Redux to bring out the best UI/UX provided by Disney+.
+              Here style compoenents are used heavily along with Redux to bring
+              out the best UI/UX provided by Disney+.
             </WorkGridItem>
           </Section>
         </SimpleGrid>
