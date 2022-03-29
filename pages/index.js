@@ -23,6 +23,7 @@ import {
   IoLogoGithub,
   IoLogoDiscord
 } from 'react-icons/io5'
+
 const Home = () => {
   return (
     <Layout>
@@ -66,11 +67,16 @@ const Home = () => {
             Work
           </Heading>
           <Paragraph padding="10px">
-            Pritam is a freelance and a full-stack developer based in Shillong
-            with a passion for building digital services/stuff he wants. He has
-            a knack for all things launching products, from planning and
-            designing all the way to solving real-life problems with code. When
-            not online, he loves hanging out with his friends or reading books.
+            I am a full-stack developer based in Shillong with a passion for
+            building digital services/stuff I want. I have a knack for all
+            things which goes from launching products, planning and designing
+            all the way to solving real-life problems with code. When not
+            online, I love hanging out with my friends or reading books. I am
+            currently working at{' '}
+            <Link href="https://geekyants.com/" isExternal>
+              Geekyants
+            </Link>{' '}
+            as a software engineer.
           </Paragraph>
           <Box align="center" my={4}>
             <NextLink href="/works">
@@ -112,7 +118,7 @@ const Home = () => {
           </Paragraph>
         </Section>
         <Section delay={0.3}>
-          <Heading as="h3" variant="section-title">
+          <Heading as="h3" variant="section-title" pb={4}>
             Find me on
           </Heading>
           <List>
