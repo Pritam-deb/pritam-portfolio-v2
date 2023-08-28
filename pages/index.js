@@ -137,7 +137,7 @@ const Home = () => {
             </ListItem>
             <ListItem>
               <Link
-                href="https://www.instagram.com/pritamdeb_/"
+                href="https://www.instagram.com/pritamdebn_/"
                 target="_blank"
               >
                 <Button
